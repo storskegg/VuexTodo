@@ -1,7 +1,8 @@
 <template>
-  <div id="current-todos" class="container">
-    <h3 v-if="todos.length > 0">Current({{todos.length}})</h3>
+  <div id="current-todos">
+    <h3>Current Todos <small v-if="todos.length > 0">({{todos.length}})</small></h3>
     <ul class="list-group">
+      <li class="list-group-item" v-if="todos.length == 0">Nothing to do...</li>
       <li class="list-group-item" v-for="todo in todos">
         {{todo.body}}
         <div class="btn-group">

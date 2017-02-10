@@ -1,9 +1,12 @@
 <template>
   <div id="app" class="container">
-    <GetTodo class="col-xs-12"></GetTodo>
-    <div class="clearfix"></div>
-    <CurrentTodos class="col-sm-9"></CurrentTodos>
-    <CompletedTodos class="col-sm-3"></CompletedTodos>
+    <div class="row">
+      <GetTodo class="col-xs-12"></GetTodo>
+    </div>
+    <div class="row">
+      <CurrentTodos class="col-sm-8"></CurrentTodos>
+      <CompletedTodos class="col-sm-4"></CompletedTodos>
+    </div>
   </div>
 </template>
 

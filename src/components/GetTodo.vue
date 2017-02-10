@@ -1,5 +1,5 @@
 <template>
-  <div id="get-todo" class="container">
+  <div id="get-todo">
     <div class="input-group">
       <input class="form-control"
         :value="newTodo"
