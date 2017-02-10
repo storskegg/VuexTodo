@@ -1,11 +1,23 @@
 <template>
-  <div id="app">
-
+  <div id="app" class="container">
+    <GetTodo class="col-xs-12"></GetTodo>
+    <div class="clearfix"></div>
+    <CurrentTodos class="col-sm-9"></CurrentTodos>
+    <CompletedTodos class="col-sm-3"></CompletedTodos>
   </div>
 </template>
 
 <script>
+import GetTodo from './components/GetTodo.vue';
+import CurrentTodos from './components/CurrentTodos.vue';
+import CompletedTodos from './components/CompletedTodos.vue';
+//bump
 export default {
+  components: {
+    GetTodo,
+    CurrentTodos,
+    CompletedTodos
+  }
 
 }
 </script>
